@@ -68,7 +68,36 @@
       </header>  
    
   </main>
-    <iframe  src="https://www.youtube.com/embed/zaz3FJk5s_Y" title="YouTube video player" id="vid"></iframe>
+    var images;
+
+
+images = ['https://think.kera.org/wp-content/uploads/2018/01/shutterstock_252976909.jpg', 'https://www.i-recruit.com/images/location/Tampa.jpg', 'https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/indianapolis-city-skyline-and-canal-walk-gregory-ballos.jpg', 'https://allhdwallpapers.com/wp-content/uploads/2015/06/Bangkok-7.jpg', 'https://www.bing.com/images/search?view=detailV2&ccid=sS9ijs6M&id=70C84D1D42F2650918004A684228C59CC19B2DB1&thid=OIP.sS9ijs6McE-pqIRcRG4SpgHaEK&mediaurl=https%3a%2f%2fbestwallpapers.net%2fdesktop%2fwp-content%2fuploads%2f2021%2f01%2fPennsylvania-City-wallpapers-US-Pennsylvania-Wallpapers-Free-Download.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.b12f628ece8c704fa9a8845c446e12a6%3frik%3dsS2bwZzFKEJoSg%26pid%3dImgRaw%26r%3d0&exph=768&expw=1366&q=City&simid=608028998635755588&FORM=IRPRST&ck=7672B6E0B4A285CE9422864A33FBEAD4&selectedIndex=32&ajaxhist=0&ajaxserp=0'];
+let element_carousel = document.getElementById('carousel');
+element_carousel.setAttribute("src", images[0]);
+
+'';
+
+
+document.getElementById('previous').addEventListener('click', (event) => {
+  let element_carousel2 = document.getElementById('carousel');
+  images.unshift(images.pop());
+  element_carousel2.setAttribute("src", images[0]);
+
+});
+
+document.getElementById('previous').addEventListener('click', (event) => {
+  let element_carousel3 = document.getElementById('carousel');
+  images.unshift(images.pop());
+  element_carousel3.setAttribute("src", images[0]);
+
+});
+
+document.getElementById('next').addEventListener('click', (event) => {
+  let element_carousel4 = document.getElementById('carousel');
+  images.unshift(images.shift());
+  element_carousel4.setAttribute("src", images[0]);
+
+});<iframe  src="https://www.youtube.com/embed/zaz3FJk5s_Y" title="YouTube video player" id="vid"></iframe>
   <footer class="c-site-footer">
   </footer>  
 </body>
