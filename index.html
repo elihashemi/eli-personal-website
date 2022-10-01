@@ -108,6 +108,51 @@ document.getElementById('next').addEventListener('click', (event) => {
 
 
 
+var array, item;
+
+
+array = ['mest ', 'chicken', 'nodel'];
+let element_list = document.getElementById('list');
+array.forEach((item) => {
+  let new_li = document.createElement('li');
+  new_li.innerText = item;
+  let new_span = document.createElement('span');
+  let new_button = document.createElement('button');
+  new_button.innerText = 'add to shopping';
+  new_button.setAttribute("id", item);
+
+  new_span.appendChild(new_button);
+
+  new_li.appendChild(new_span);
+
+  element_list.appendChild(new_li);
+});
+
+
+document.getElementById('chicken').addEventListener('click', (event) => {
+  let element_shop = document.getElementById('shop');
+  let new_li2 = document.createElement('li');
+  new_li2.innerText = 'chicken';
+
+  element_shop.appendChild(new_li2);
+
+});
+
+document.getElementById('meat').addEventListener('click', (event) => {
+  let element_shop2 = document.getElementById('shop');
+  let new_li3 = document.createElement('li');
+  new_li3.innerText = 'meat';
+
+  element_shop2.appendChild(new_li3);
+
+});
+
+document.getElementById('nodel').addEventListener('click', (event) => {
+  let element_shop3 = document.getElementById('shop');
+  let new_li4 = document.createElement('li');
+  new_li4.innerText = 'nodel';
+
+  element_shop3.appendChild(new_li4);
 
 
 
