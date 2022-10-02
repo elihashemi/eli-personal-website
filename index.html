@@ -101,22 +101,26 @@ document.getElementById('next').addEventListener('click', (event) => {
   <footer class="c-site-footer">
     
     
-    <p>Shopping List:</p>
-<ul>
- <li>Cheese
-  <button id="cheese">Add To Shopping Cart</button></li>
- <li>Yogurt
-  <button id="yogurt">Add To Shopping Cart</button></li> 
- <li>Butter
-  <button id="butter">Add To Shopping Cart</button></li>
- <li>Cream
-  <button id="cream">Add To Shopping Cart</button</li>
-</ul>
-<p>Current Shopping Cart:
-<ol id="new_list"></ol>
-<p id="test"></p>
-  </footer>  
+   <div>
+  <h3> please add a comment</h3> 
+
+  <label>Name:</label>
+  <input id="inputName" type="name" placeholder="..."> </input>
+  <br>
+
+  <br>
+  <label>comment:</label>
+  <br>
+  <textarea type="text" placeholder="..." id="inputComment"></textarea> 
+  
+</div>
+<button id="button"> Send </button>
+
+  <div id="outputName"></div >
+  <div id="outputText"> </div>
+ 
 </body>
+  </footer> 
 </html>
 
 
